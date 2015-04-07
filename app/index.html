@@ -9,23 +9,29 @@
 <article class="story">
   <header class="header">
     <h1>{{ META.project_title }}</h1>
-    <p class="credit"><a href="http://www.texastribune.org/about/staff/patrick-svitek/">Patrick Svitek</a>, <a href="http://www.texastribune.org/about/staff/abby-livingston/">Abby Livingston</a> and <a href="http://www.texastribune.org/about/staff/ryan-murphy/">Ryan Murphy</a> | April 8, 2015</p>
+    <p class="credit">By <a href="http://www.texastribune.org/about/staff/patrick-svitek/">Patrick Svitek</a>, <a href="http://www.texastribune.org/about/staff/abby-livingston/">Abby Livingston</a> and <a href="http://www.texastribune.org/about/staff/ryan-murphy/">Ryan Murphy</a></p>
   </header>
 
   <div class="intro">
-      <div class="lead-art">
-        <img src="assets/images/cruz.jpg" alt="Ted Cruz">
-      </div>
-      <div class="prose">
-      {{ META.project_intro }}
+    <div class="lead-art">
+      <img src="assets/images/tedtracker-leadart.jpg" alt="TedTracker">
     </div>
+    <div class="prose">
+    {{ META.project_intro }}
+    </div>
+    <ul class="links">
+      <li><a href="http://www.texastribune.org/tedpedia/">Tedpedia</a></li>
+      <li><a href="http://www.texastribune.org/directory/ted-cruz/">View in Directory</a></li>
+      <li><a href="http://www.texastribune.org/bidness/explore/ted-cruz/"><span class="ethics-cut">View in</span> Ethics Explorer</a></li>
+      <li><a href="https://twitter.com/tedwire">TedWire</a></li>
+    </ul>
   </div>
 
   <section class="section agenda">
     <header class="section-header">
       <h2>On the Agenda</h2>
     </header>
-    <div class="agenda-entries" id="agenda-entries"></div>
+    <div id="agenda-entries" class="agenda-entries"></div>
   </section>
 
   <section class="section tracker">
@@ -33,17 +39,7 @@
       <h2>Tracker</h2>
     </header>
     <div id="map" class="map"></div>
-    <table>
-      <thead>
-        <tr>
-          <th>Date</th>
-          <th>Venue</th>
-          <th>Location</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody id="tbody"></tbody>
-    </table>
+    <div id="tracker-entries" class="tracker-entries"></div>
   </section>
 </article>
 {% endblock %}

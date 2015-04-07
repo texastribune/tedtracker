@@ -40,14 +40,13 @@ tr {
 th {
   border-bottom: 1px solid rgb(187, 187, 187);
   font-weight: 800;
-  padding: 0 .428571429em .428571429em;
+  padding: 0 .428571429em .428571429em; // 0 6px 6px
   text-align: left;
   vertical-align: bottom;
 }
 
 td {
-  font-size: .857142857em;
-  padding: .428571429em;
+  padding: .428571429em; // 6px
   text-align: left;
 
   @include susy-media(max-width $table-bp) {

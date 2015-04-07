@@ -14,33 +14,50 @@
 @import 'components/agenda';
 @import 'components/table';
 
+$mobile-flip-bp: 30em;
+$ethics-text-bp: 45.625em;
+
 .story {
   margin-bottom: 2em;
-  margin-top: .3125em;
+  margin-top: .625em;
 
   .header {
+    float: none;
     padding-bottom: 1.5em;
+
+    @include susy-media($mobile-flip-bp) {
+      @include span(5 of 12 last);
+      float: left;
+    }
+
+    p {
+      line-height: 1.8;
+    }
   }
 
   h1 {
     font-size: 1.75em;
-    font-style: italic;
     font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: .178571429em;
 
     @include susy-media(30em) {
-      font-size: 2.25em;
+      font-size: 2.5em;
+      margin-bottom: .138888889em;
     }
   }
 
   .intro {
     @include clearfix;
+    margin-bottom: 2em;
   }
 
   .lead-art {
-    margin: 0 0 .625em;
+    padding-bottom: 1.25em;
 
-    @include susy-media(37.5em) {
+    @include susy-media($mobile-flip-bp) {
       @include span(5 of 12 last);
+      padding-left: .625em;
     }
   }
 
@@ -59,8 +76,7 @@
   }
 
   .prose {
-    margin: 0 0 1em;
-    padding: 0 0 1em;
+    margin: 0 0 2em;
 
     @include susy-media(37.5em) {
       @include span(7 of 12);
@@ -69,6 +85,50 @@
     p {
       line-height: 1.5;
       max-width: 38.75em;
+    }
+  }
+}
+
+.links {
+  li {
+    @include gallery(6 of 12);
+    background-color: $href-teal;
+    border-bottom: .3125em solid darken($href-teal, 10%);
+    border-radius: .125em;
+    cursor: pointer;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: .0625em;
+    margin-bottom: .625em;
+    padding: .3125em;
+    text-align: center;
+    text-shadow: 0 .0625em .0625em rgba(0, 0, 0, .4);
+    text-transform: uppercase;
+
+    @include susy-media(53.875em) {
+      @include gallery(3 of 12);
+    }
+
+    &:hover {
+      background-color: lighten($href-teal, 10%);
+      border-bottom: .1875em solid $href-teal;
+      padding-bottom: .4375em;
+    }
+  }
+
+  a {
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: .75em;
+    font-weight: 800;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .ethics-cut {
+    @include susy-media(max-width $ethics-text-bp) {
+      @include visuallyhidden;
     }
   }
 }

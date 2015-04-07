@@ -1,15 +1,56 @@
 {
   "META": {
-    "project_title": "TedTracker",
+    "project_title": "TedTracker: Follow Cruz on the Campaign Trail",
     "project_intro": "<p>On March 23, 2015, U.S. Sen. Ted Cruz became the first major candidate to announce he was running for president in 2016. Since then, he has been crisscrossing the country at a feverish pace, looking to make the most of his head start on the rest of his potential rivals. Below we’ve compiled the public events — past and future — Cruz has announced since making his run official. </p>\n"
   },
   "FUTURE": [
     {
-      "venue": "Newberry Hall",
-      "type": "Meeting",
-      "location": "Aiken, SC",
-      "date": "4/4/2015",
-      "description": "Cruz meets with the Aiken Republican Club."
+      "venue": "Music City Center ",
+      "type": "Candidate forum",
+      "location": "Nashville, TN",
+      "date": "4/10/2015",
+      "description": "Cruz is one of several presidential contenders scheduled to speak at the NRA's annual meeting."
+    },
+    {
+      "venue": "Crowne Plaza Hotel Nashua",
+      "type": "Candidate forum",
+      "location": "Nashua, NH",
+      "date": "4/18/2015",
+      "description": "Cruz is one of several presidential contenders scheduled to speak at the New Hampshire GOP's First in the Nation Leadership Summit."
+    },
+    {
+      "venue": "Crowne Plaza Hotel Nashua",
+      "type": "Speech",
+      "location": "Nashua, NH",
+      "date": "4/18/2015",
+      "description": "Cruz is scheduled to deliver remarks to the Young Republicans Convention of New Hampshire."
+    },
+    {
+      "venue": "Venetian Resort and Hotel ",
+      "type": "Candidate forum",
+      "location": "Las Vegas, NV",
+      "date": "4/24 or 4/25/2015",
+      "description": "Cruz is a confirmed speaker at the Republican Jewish Coalition spring meeting."
+    },
+    {
+      "venue": "Point of Grace Church",
+      "type": "Candidate forum",
+      "location": "Waukee, IA",
+      "date": "4/25/2015",
+      "description": "Cruz is set to speak at the Iowa Faith & Freedom Coalition's 15th Annual Spring Kick-off Event. "
+    },
+    {
+      "type": "Q&A ",
+      "location": "Washington",
+      "date": "4/29/2015",
+      "description": "Cruz will do a question and answer session with the U.S. Hispanic Chamber of Commerce."
+    },
+    {
+      "venue": "Peace Center",
+      "type": "Candidate forum",
+      "location": "Greenville, SC ",
+      "date": "5/9/2015",
+      "description": "Cruz is one of several presidential contenders planning to speak at the South Carolina Freedom Summit, sponsored by Citizens United."
     }
   ],
   "PAST": [

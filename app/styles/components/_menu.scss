@@ -1,5 +1,16 @@
 $menu-breakpoint: 26.25em; // 420px
 
+.menu-container {
+  background-color: $menubar-gray;
+}
+
+.menu-scroll {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
 .menu-nav {
   background-color: $menubar-gray;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -15,10 +26,6 @@ $menu-breakpoint: 26.25em; // 420px
     text-transform: uppercase;
     white-space: nowrap;
 
-    @include susy-media($menu-breakpoint) {
-      font-size: .875em;
-    }
-
     &:hover {
       color: $tribune-yellow;
       text-decoration: none;
@@ -30,7 +37,7 @@ $menu-breakpoint: 26.25em; // 420px
   }
 }
 
-.explorer-cut {
+.menu-cut {
   display: none;
 
   @include susy-media($menu-breakpoint) {
