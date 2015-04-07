@@ -14,20 +14,19 @@
 @import 'components/agenda';
 @import 'components/table';
 
-$mobile-flip-bp: 30em;
-$ethics-text-bp: 45.625em;
+$mobile-flip-bp: 30em; // 480px
+$ethics-text-bp: 45.625em; // 730px
+$art-flip-bp: 52.5em; // 840px
 
 .story {
   margin-bottom: 2em;
   margin-top: .625em;
 
   .header {
-    float: none;
     padding-bottom: 1.5em;
 
-    @include susy-media($mobile-flip-bp) {
-      @include span(5 of 12 last);
-      float: left;
+    @include susy-media($art-flip-bp) {
+      @include span(7 of 12);
     }
 
     p {
@@ -41,7 +40,7 @@ $ethics-text-bp: 45.625em;
     line-height: 1.2;
     margin-bottom: .178571429em;
 
-    @include susy-media(30em) {
+    @include susy-media($art-flip-bp) {
       font-size: 2.5em;
       margin-bottom: .138888889em;
     }

@@ -38,6 +38,12 @@
     var entries = '';
 
     for (var i = 0, len = data.length; i < len; i++) {
+      if (data[i].lat && data[i].lon) {
+        var marker = L.marker([data[i].lat, data[i].lon]);
+        marker.bindPopup('<strong>' + data[i].location + '</strong><br>' + data[i].venue + '<br>' + data[i].date);
+        layer.addLayer(marker);
+      }
+
       entries += '<div class="entry">';
       entries += '<ul class="date">';
       entries += data[i].date ? '<li>' + data[i].date + '</li>' : '';
