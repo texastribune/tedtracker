@@ -1,0 +1,57 @@
+.agenda-entries {
+  border-bottom: 1px solid $border-gray;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: .875em;
+  line-height: 1.3;
+}
+
+.circle {
+  background-color: rgb(255, 0, 0);
+  border-radius: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+.entry {
+  @include clearfix;
+  border-top: 1px solid $border-gray;
+  padding: .5em 0;
+
+  &:first-child {
+    border-top: 0;
+  }
+}
+
+.date {
+  @include span(5 of 12);
+
+  @include susy-media(50em) {
+    @include span(2 of 12);
+  }
+
+  li {
+    color: lighten($bodytext-black, 30%);
+
+    &:first-child {
+      color: $bodytext-black;
+      font-weight: 800;
+    }
+  }
+}
+
+.info {
+  @include span(7 of 12 last);
+
+  @include susy-media(50em) {
+    @include span(10 of 12 last);
+  }
+
+  li {
+    margin-bottom: .714285714em;
+  }
+}
+
+.date-location {
+  float: right;
+  text-align: right;
+}

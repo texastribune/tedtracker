@@ -1,0 +1,67 @@
+$footer-bp: 56.25em;
+
+.footer {
+  background-color: $bodytext-black;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: .03em;
+  padding: .625em 0;
+
+  nav {
+    @include susy-media($footer-bp) {
+      float: left;
+    }
+
+    &.last-nav {
+      @include susy-media($footer-bp) {
+        float: right;
+      }
+    }
+
+    a {
+      color: $footer-white;
+    }
+  }
+
+  ul {
+    display: block;
+  }
+
+  li {
+    @include susy-media(max-width $footer-bp) {
+      @include gallery(6 of 12);
+      color: $footer-white;
+      font-size: .875em;
+      padding: .5em 0;
+      text-align: center;
+    }
+
+    @include susy-media($footer-bp) {
+      border-left: 1px solid $footer-separator-white;
+      float: left;
+      font-size: .75em;
+      padding: 0 .5em;
+      text-align: left;
+    }
+
+    &:first-child {
+      border-left: 0;
+      padding-left: 0;
+    }
+  }
+
+  .copywrite {
+    color: $copywrite-gray;
+    width: 100%;
+
+    a {
+      color: $copywrite-gray;
+    }
+  }
+
+  .donate {
+    a {
+      color: $href-teal;
+      font-weight: 800;
+    }
+  }
+}

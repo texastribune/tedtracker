@@ -1,0 +1,55 @@
+{
+  "private": true,
+  "config": {
+    "s3_bucket": "apps.texastribune.org",
+    "slug": "tedtracker"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.5.0",
+    "browserify": "^9.0.3",
+    "chalk": "^1.0.0",
+    "del": "^1.1.1",
+    "googleapis": "^2.0.2",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-cache": "^0.2.8",
+    "gulp-concat": "^2.5.2",
+    "gulp-csso": "^1.0.0",
+    "gulp-if": "^1.2.5",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-jshint": "^1.9.4",
+    "gulp-load-plugins": "^0.9.0",
+    "gulp-minify-html": "^1.0.2",
+    "gulp-sass": "^1.3.3",
+    "gulp-size": "^1.2.1",
+    "gulp-sourcemaps": "^1.5.1",
+    "gulp-uglify": "^1.1.0",
+    "inquirer": "^0.8.2",
+    "jshint-stylish": "^1.0.1",
+    "marked": "^0.3.3",
+    "nconf": "^0.7.1",
+    "nunjucks": "^1.2.0",
+    "open": "0.0.5",
+    "request": "^2.54.0",
+    "run-sequence": "^1.0.2",
+    "susy": "^2.2.2",
+    "untildify": "^2.0.0",
+    "vinyl-map": "^1.0.1",
+    "vinyl-transform": "^1.0.0",
+    "xlsx": "^0.7.12"
+  },
+  "scripts": {
+    "spreadsheet/authorize": "./bin/authorize.js",
+    "spreadsheet/fetch": "./bin/fetch_spreadsheet.js",
+    "spreadsheet/edit": "./bin/edit_spreadsheet.js",
+    "assets/push": "./bin/push_assets_to_s3.sh",
+    "assets/pull": "./bin/pull_assets_from_s3.sh",
+    "deploy": "./bin/deploy.sh && npm run assets/push"
+  },
+  "engines": {
+    "iojs": "1.6.x"
+  },
+  "dependencies": {
+    "shoestring": "^1.0.2"
+  }
+}

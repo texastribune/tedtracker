@@ -1,0 +1,152 @@
+{
+  "META": {
+    "project_title": "TedTracker",
+    "project_intro": "<p>On March 23, 2015, U.S. Sen. Ted Cruz became the first major candidate to announce he was running for president in 2016. Since then, he has been crisscrossing the country at a feverish pace, looking to make the most of his head start on the rest of his potential rivals. Below we’ve compiled the public events — past and future — Cruz has announced since making his run official. </p>\n"
+  },
+  "FUTURE": [
+    {
+      "venue": "Newberry Hall",
+      "type": "Meeting",
+      "location": "Aiken, SC",
+      "date": "4/4/2015",
+      "description": "Cruz meets with the Aiken Republican Club."
+    }
+  ],
+  "PAST": [
+    {
+      "venue": "Liberty University",
+      "type": "Speech",
+      "location": "Lynchburg, VA",
+      "date": "3/23/2015",
+      "description_md": "<p>Cruz announces he’s running for president in 2016.</p>\n",
+      "lat": 37.413754,
+      "lon": -79.142246
+    },
+    {
+      "venue": "VFW Post 8641",
+      "type": "Rally",
+      "location": "Merrimack, NH",
+      "date": "3/27/2015",
+      "description_md": "<p>Cruz attends a rally for the Conservative Business League of New Hampshire.</p>\n",
+      "lat": 42.867869,
+      "lon": -71.494832
+    },
+    {
+      "venue": "11 Tara Blvd.",
+      "type": "Dinner",
+      "location": "Nashua, NH",
+      "date": "3/27/2015",
+      "description_md": "<p>Cruz attends a dinner at the Young America’s Foundation New England Freedom Conference.</p>\n",
+      "lat": 42.765366,
+      "lon": -71.467566
+    },
+    {
+      "venue": "Portsmouth Country Club",
+      "type": "Brunch",
+      "location": "Greeland, NH",
+      "date": "3/28/2015",
+      "description_md": "<p>Cruz attends a brunch for the Rockingham County Republican Committee and Seacoast Republican Women.</p>\n",
+      "lat": 43.0362,
+      "lon": -70.832832
+    },
+    {
+      "venue": "National campaign headquarters",
+      "type": "Open house",
+      "location": "Houston, TX",
+      "date": "3/31/2015",
+      "description_md": "<p>Cruz takes photos with supporters at his campaign headquarters then holds a rally outside.</p>\n",
+      "lat": 29.760427,
+      "lon": -95.369803
+    },
+    {
+      "venue": "Morningside College",
+      "type": "Town hall",
+      "location": "Sioux City, IA",
+      "date": "4/1/2015",
+      "description_md": "<p>Cruz participates in a town hall.</p>\n",
+      "lat": 42.499994,
+      "lon": -96.400307
+    },
+    {
+      "venue": "Park Farm Winery",
+      "type": "Reception",
+      "location": "Durango, IA",
+      "date": "4/1/2015",
+      "description_md": "<p>Cruz attends a reception for the Republican Party of Dubuque County.</p>\n",
+      "lat": 42.560277,
+      "lon": -90.775683
+    },
+    {
+      "venue": "Pipac Center",
+      "type": "Town hall",
+      "location": "Cedar Rapids, IA",
+      "date": "4/2/2015",
+      "description_md": "<p>Cruz participates in a town hall.</p>\n",
+      "lat": 41.97788,
+      "lon": -91.665623
+    },
+    {
+      "venue": "Long Branch Hotel",
+      "type": "Town hall",
+      "location": "Cedar Rapids, IA",
+      "date": "4/2/2015",
+      "description_md": "<p>Cruz participates in a town hall.</p>\n",
+      "lat": 41.97788,
+      "lon": -91.665623
+    },
+    {
+      "venue": "Holiday Inn Des Moines-Airport",
+      "type": "Town hall",
+      "location": "Des Moines, IA",
+      "date": "4/2/2015",
+      "description_md": "<p>Cruz participates in a town hall.</p>\n",
+      "lat": 41.600545,
+      "lon": -93.609106
+    },
+    {
+      "venue": "Holiday Inn",
+      "type": "Town hall",
+      "location": "Rock Hill, SC",
+      "date": "4/3/2015",
+      "description_md": "<p>Cruz participates in a town hall.</p>\n",
+      "lat": 34.924867,
+      "lon": -81.025078
+    },
+    {
+      "venue": "The Beacon Drive-In Restaurant",
+      "type": "Town hall",
+      "location": "Spartanburg, SC",
+      "date": "4/3/2015",
+      "description_md": "<p>Cruz participates in a town hall organized by the Spartanburg County GOP.</p>\n",
+      "lat": 34.949567,
+      "lon": -81.932048
+    },
+    {
+      "venue": "The Poinsett Club",
+      "type": "Reception",
+      "location": "Greenville, SC",
+      "date": "4/3/2015",
+      "description_md": "<p>Cruz attends a reception for the Republican Women Dessert.</p>\n",
+      "lat": 34.852618,
+      "lon": -82.39401
+    },
+    {
+      "venue": "Palmetto Pig BBQ",
+      "type": "Lunch ",
+      "location": "Columbia, SC",
+      "date": "4/4/2015",
+      "description_md": "<p>Cruz stops for lunch.</p>\n",
+      "lat": 34.00071,
+      "lon": -81.034814
+    },
+    {
+      "venue": "Newberry Hall",
+      "type": "Meeting",
+      "location": "Aiken, SC",
+      "date": "4/4/2015",
+      "description_md": "<p>Cruz meets with the Aiken Republican Club.</p>\n",
+      "lat": 33.560417,
+      "lon": -81.719553
+    }
+  ]
+}

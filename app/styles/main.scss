@@ -1,0 +1,87 @@
+@import 'normalize';
+@import 'node_modules/susy/sass/susy';
+
+@import 'mixins';
+@import 'colors';
+@import 'fonts';
+@import 'base';
+
+@import 'components/masthead';
+@import 'components/menu';
+@import 'components/footer';
+@import 'components/map';
+@import 'components/ads';
+@import 'components/agenda';
+@import 'components/table';
+
+.story {
+  margin-bottom: 2em;
+  margin-top: .3125em;
+
+  .header {
+    padding-bottom: 1.5em;
+  }
+
+  h1 {
+    font-size: 1.75em;
+    font-style: italic;
+    font-weight: 400;
+
+    @include susy-media(30em) {
+      font-size: 2.25em;
+    }
+  }
+
+  .intro {
+    @include clearfix;
+  }
+
+  .lead-art {
+    margin: 0 0 .625em;
+
+    @include susy-media(37.5em) {
+      @include span(5 of 12 last);
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .credit {
+    color: lighten($bodytext-black, 30%);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: .75em;
+
+    a {
+      font-weight: 800;
+    }
+  }
+
+  .prose {
+    margin: 0 0 1em;
+    padding: 0 0 1em;
+
+    @include susy-media(37.5em) {
+      @include span(7 of 12);
+    }
+
+    p {
+      line-height: 1.5;
+      max-width: 38.75em;
+    }
+  }
+}
+
+.section {
+  margin-bottom: 2em;
+}
+
+.section-header {
+  border-bottom: 2px solid $tribune-yellow;
+
+  h2 {
+    font-size: 1.25em;
+    line-height: 1.8;
+  }
+}

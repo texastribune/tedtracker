@@ -1,0 +1,39 @@
+$menu-breakpoint: 26.25em; // 420px
+
+.menu-nav {
+  background-color: $menubar-gray;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+
+  a {
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: .875em;
+    font-weight: 500;
+    letter-spacing: .071428571em;
+    margin: .571428571em .714285714em; // 8px 10px
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    @include susy-media($menu-breakpoint) {
+      font-size: .875em;
+    }
+
+    &:hover {
+      color: $tribune-yellow;
+      text-decoration: none;
+    }
+  }
+
+  li {
+    display: inline-block;
+  }
+}
+
+.explorer-cut {
+  display: none;
+
+  @include susy-media($menu-breakpoint) {
+    display: inline;
+  }
+}

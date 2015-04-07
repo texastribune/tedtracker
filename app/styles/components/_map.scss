@@ -1,0 +1,9 @@
+.map {
+  height: 20em;
+  margin: 1em 0;
+  width: 100%;
+
+  @include susy-media(50em) {
+    height: 31.25em;
+  }
+}

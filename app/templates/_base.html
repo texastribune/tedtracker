@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ META.project_title }} | The Texas Tribune</title>
+  {% block styles %}
+  <link rel="stylesheet" href="//api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.css">
+  <link rel="stylesheet" href="styles/main.css">
+  {% endblock %}
+  {% include 'templates/includes/_ad_script.html' %}
+</head>
+<body>
+
+<header class="masthead">
+  <div class="container">
+    <h2 class="header-logo">
+      <a href="http://www.texastribune.org">
+        <img class="logo" src="assets/images/trib-logo-white-500x55.png" alt="The Texas Tribune">
+      </a>
+    </h2>
+  </div>
+</header>
+
+<nav id="menu-nav" class="menu-nav">
+  <div class="container">
+    <ul>
+      <li><a href="http://www.texastribune.org/tedpedia/">TedPedia</a></li>
+      <li><a href="http://www.texastribune.org/directory/ted-cruz/">Directory</a></li>
+      <li><a href="http://www.texastribune.org/bidness/explore/ted-cruz/">Ethics <span class="explorer-cut">Explorer</span></a></li>
+    </ul>
+  </div>
+</nav>
+
+{% include 'templates/includes/_ad_atf.html' %}
+
+<main class="container" role="main">
+  {% block content %}{% endblock %}
+</main>
+
+{% include 'templates/includes/_ad_btf.html' %}
+
+<footer class="footer">
+  <div class="container">
+    <nav>
+      <ul>
+        <li class="copywrite">&copy; 2015 <a href="http://www.texastribune.org/">The Texas Tribune</a></li>
+      </ul>
+    </nav>
+    <nav class="last-nav">
+      <ul>
+        <li><a href="http://www.texastribune.org/about/">About Us</a></li>
+        <li><a href="http://www.texastribune.org/contact/">Contact Us</a></li>
+        <li><a href="http://www.texastribune.org/support-us/donors-and-members/">Who Funds Us?</a></li>
+        <li><a href="http://www.texastribune.org/terms-of-service/">Terms of Service</a></li>
+        <li><a href="http://www.texastribune.org/ethics/">Code of Ethics</a></li>
+        <li><a href="http://www.texastribune.org/privacy/">Privacy Policy</a></li>
+        <li class="donate"><a href="https://www.texastribune.org/join/">Donate</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+{% block script %}
+<script src='//api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.js'></script>
+<script src="scripts/bundle.js"></script>
+{% endblock %}
+</body>
+</html>
