@@ -18,8 +18,8 @@
     for (var i = 0, len = data.length; i < len; i++) {
       entries += '<div class="entry">';
       entries += '<ul class="date">';
-      entries += '<li>' + (data[i].date || '&nbsp;') + '</li>';
-      entries += '<li>' + (data[i].venue || '&nbsp;') + '</li>';
+      entries += '<li>' + (data[i].date || '') + '</li>';
+      entries += '<li>' + (data[i].venue || '') + '</li>';
       entries += data[i].location ? '<li><span class="icon-map-marker"></span> ' + data[i].location + '</li>' : '';
       entries += '</ul>';
 

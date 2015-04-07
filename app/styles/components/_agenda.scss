@@ -1,3 +1,5 @@
+$mobile-bp: 50em;
+
 .agenda-entries,
 .tracker-entries {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -24,10 +26,19 @@
 }
 
 .date {
+  @include span(5 of 12);
+
+  @include susy-media($mobile-bp) {
+    @include span(6 of 12);
+  }
+
   li {
-    @include span(2 of 12);
     color: lighten($bodytext-black, 30%);
-    text-align: center;
+
+    @include susy-media($mobile-bp) {
+      @include gallery(2 of 6);
+      text-align: center;
+    }
 
     &:first-child {
       color: $bodytext-black;
