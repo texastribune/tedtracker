@@ -45,7 +45,9 @@ gulp.task('styles', function() {
 gulp.task('scripts', ['jshint'], function() {
   var sources = [
     'node_modules/shoestring/dist/shoestring.js',
-    'app/scripts/**/*.js'
+    'app/scripts/**/*.js',
+    'app/scripts/libs/ads.js',
+    'app/scripts/libs/ga.js'
   ];
 
   return gulp.src(sources)

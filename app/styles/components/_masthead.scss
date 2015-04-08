@@ -1,7 +1,15 @@
+// the toggle point between the mobile menu and the desktop menu
+$menu-bp: 37.8125em; // 605px
+
 .masthead {
+  @include clearfix;
   background-color: $bodytext-black;
-  padding: .5em 0 .375em;
-  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: .5em 0 .375em .625em;
+
+  @include susy-media($menu-bp) {
+    text-align: center;
+  }
 
   h2 {
     font-size: 1em;
@@ -9,6 +17,11 @@
 }
 
 .logo {
+  float: left;
   height: 1.375em;
   vertical-align: bottom;
+
+  @include susy-media($menu-bp) {
+    float: none;
+  }
 }

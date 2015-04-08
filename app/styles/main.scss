@@ -57,16 +57,27 @@ $art-flip-bp: 52.5em; // 840px
       @include span(5 of 12 last);
       padding-left: .625em;
     }
-  }
 
-  img {
-    width: 100%;
+    img {
+      margin-bottom: .3125em;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    figcaption {
+      color: lighten($bodytext-black, 30%);
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: .625em; // 10px
+      letter-spacing: .015625em; // 0.15px
+      text-align: right;
+    }
   }
 
   .credit {
     color: lighten($bodytext-black, 30%);
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: .75em;
+    font-size: .75em; // 12px
+    letter-spacing: .013020833em; // 0.15px
 
     a {
       font-weight: 800;
@@ -88,6 +99,8 @@ $art-flip-bp: 52.5em; // 840px
 }
 
 .links {
+  @include clearfix;
+
   li {
     @include gallery(6 of 12);
     background-color: $href-teal;
@@ -145,5 +158,38 @@ $art-flip-bp: 52.5em; // 840px
   h2 {
     font-size: 1.25em;
     line-height: 1.8;
+  }
+}
+
+.share-cells {
+  @include clearfix;
+  border-bottom: 1px solid $border-gray;
+  border-top: 1px solid $border-gray;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  .icon {
+    margin-right: .25em;
+  }
+
+  li {
+    float: left;
+    font-size: .75em;
+    text-align: center;
+    width: 50%;
+
+    &:first-child {
+      border-right: 1px solid $border-gray;
+    }
+  }
+
+  a {
+    color: $menubar-accent-gray;
+    display: block;
+    padding: .833333333em 0;
+
+    &:hover {
+      color: lighten($menubar-accent-gray, 20%);
+      text-decoration: none;
+    }
   }
 }

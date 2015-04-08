@@ -3,6 +3,19 @@
 (function() {
   'use strict';
 
+  var menuButton = shoestring('#menu-button');
+  var menuNav = shoestring('#menu-nav');
+
+  menuButton.on('click', function(e) {
+    e.preventDefault();
+
+    if (menuNav.is('.menu-nav-open')) {
+      menuNav.removeClass('menu-nav-open');
+    } else {
+      menuNav.addClass('menu-nav-open');
+    }
+  });
+
   L.mapbox.accessToken = 'pk.eyJ1IjoidGV4YXN0cmlidW5lIiwiYSI6Ilo2eDhZWmcifQ.19qcXfOTN6ulkGW5oouiPQ';
   var map = L.mapbox.map('map', 'examples.map-i86nkdio').setView([40, -74.50], 9);
   map.scrollWheelZoom.disable();
