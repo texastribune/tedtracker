@@ -1,6 +1,11 @@
 .banner-ad {
-  padding: .625em 0;
+  height: 100px;
+  margin: .625em 0;
   text-align: center;
+
+  @include susy-media(780px) {
+    height: 90px;
+  }
 
   &-top {
     border-top: 0;
