@@ -18,6 +18,12 @@ npm install
 
 To update the data from the Google spreadsheet, run `npm run spreadsheet/fetch`. Please note – if you do not have access to that spreadsheet and/or have not been authenticated against access to Google's Drive API with the Texas Tribune's graphics app, this will not work for you. (This should only apply to those of you playing a long at home/not members of News Apps.)
 
+You'll then need to pull down the raw assets from S3. We don't commit images and the like.
+
+```sh
+npm run assets/pull
+```
+
 To test the site locally, run `gulp serve`.
 
 ## Deployment
