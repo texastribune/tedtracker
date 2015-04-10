@@ -1,6 +1,6 @@
 /* global L, shoestring */
 
-(function() {
+shoestring.ready(function() {
   'use strict';
 
   var menuButton = shoestring('#menu-button');
@@ -74,4 +74,4 @@
     trackerEntries.html(entries);
     map.fitBounds(layer.getBounds());
   });
-})();
+});

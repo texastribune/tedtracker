@@ -19,6 +19,7 @@
   <meta property="og:site_name" content="The Texas Tribune">
   <meta property="og:image" content="http://{{ SITE.s3_bucket }}/{{ SITE.slug }}/assets/images/tedtracker-leadart.jpg">
   <meta property="fb:app_id" content="154122474650943">
+  <script src="scripts/bundle.js" async defer></script>
 </head>
 <body>
 
@@ -71,8 +72,7 @@
 </footer>
 
 {% block script %}
-<script src='//api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.js'></script>
-<script src="scripts/bundle.js"></script>
+
 {% endblock %}
 </body>
 </html>

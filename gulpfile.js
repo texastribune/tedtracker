@@ -38,12 +38,14 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('.tmp'))
     .pipe($.if('*.css', reload({stream: true})))
     .pipe($.if('*.css', $.csso()))
+    .pipe($.gzip({append: false}))
     .pipe(gulp.dest('dist'))
     .pipe($.size({title: 'styles'}));
 });
 
 gulp.task('scripts', ['jshint'], function() {
   var sources = [
+    'app/scripts/libs/mapbox.uncompressed.js',
     'node_modules/shoestring/dist/shoestring.js',
     'app/scripts/**/*.js',
     'app/scripts/libs/ads.js',
@@ -51,9 +53,10 @@ gulp.task('scripts', ['jshint'], function() {
   ];
 
   return gulp.src(sources)
-    .pipe($.concat('bundle.js'))
+    .pipe($.concat('bundle.js', {newLine: ';'}))
     .pipe(gulp.dest('.tmp/scripts'))
     .pipe($.uglify())
+    .pipe($.gzip({append: false}))
     .pipe(gulp.dest('dist/scripts'))
     .pipe($.size({title: 'scripts'}));
 });
@@ -79,12 +82,14 @@ gulp.task('templates', function() {
     .pipe(nunjuckified)
     .pipe(gulp.dest('.tmp'))
     .pipe($.minifyHtml())
+    .pipe($.gzip({append: false}))
     .pipe(gulp.dest('dist'))
     .pipe($.size({title: 'templates'}));
 });
 
 gulp.task('assets', function() {
   return gulp.src(['app/assets/**/*', '!app/assets/images/'])
+  .pipe($.if('*.json', $.gzip({append: false})))
   .pipe(gulp.dest('dist/assets'))
   .pipe($.size({title: 'assets'}));
 });
