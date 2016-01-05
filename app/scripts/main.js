@@ -17,7 +17,7 @@ shoestring.ready(function() {
   });
 
   L.mapbox.accessToken = 'pk.eyJ1IjoidGV4YXN0cmlidW5lIiwiYSI6Ilo2eDhZWmcifQ.19qcXfOTN6ulkGW5oouiPQ';
-  var map = L.mapbox.map('map', 'examples.map-i86nkdio').setView([40, -74.50], 9);
+  var map = L.mapbox.map('map', 'texastribune.7e876baa').setView([40, -74.50], 9);
   map.scrollWheelZoom.disable();
   var layer = L.mapbox.featureLayer().addTo(map);
 
@@ -65,7 +65,7 @@ shoestring.ready(function() {
       entries += '</ul>';
 
       entries += '<ul class="info">';
-      entries += '<li>' + data[i].description_md + '</li>';
+      entries += '<li>' + (data[i].description_md || '') + '</li>';
       entries += data[i].host ? '<li class="host"><strong>Host</strong>: ' + data[i].host + '</li>' : '';
       entries += '</ul>';
       entries += '</div>';
